@@ -1,0 +1,106 @@
+1. LARGE MODEL FILES (CRITICAL: Prevents uploading gigabytes of data)
+
+Ignore the entire model deployment folder (CALS v1, etc.)
+
+app/models/CALS_Model_v*/
+
+Ignore large cached model files downloaded by Hugging Face 
+
+~/.cache/huggingface/
+
+~/.cache/torch/
+
+
+
+2. PYTHON ENVIRONMENT & CACHE
+
+Virtual Environment folder
+
+venv/
+.venv/
+env/
+.env/
+
+Python compiled files
+
+pycache/
+*.pyc
+
+Project data logs
+
+*.log
+
+
+
+3. STREAMLIT & TEMPORARY FILES
+
+Ignore the Streamlit cache directory
+
+.streamlit/
+
+Ignore the generated database file (contains user data and history)
+
+database/legal_summaries.db
+database/*.db
+
+Ignore artifacts generated during training
+
+checkpoints/
+
+
+4. DATA/TEMPORARY FILES
+
+Ignore any intermediate datasets or generated files
+
+data/
+*.zip
+*.tar.gz
+
+# Ignore the generated database file (contains user data and history)
+database/legal_summaries.db
+database/*.db
+
+Dependencies and Caching
+
+*.egg-info/
+*.whl
+dist/
+build/
+
+IDE and OS Specific Files
+
+.vscode/
+.DS_Store
+Thumbs.db
+
+Streamlit/HuggingFace Caches
+
+.streamlit/
+.cache/
+hf_cache/
+
+----------------------------------------------------
+
+MACHINE LEARNING / MODEL ARTIFACTS
+
+----------------------------------------------------
+
+Exclude model training and inference directories
+
+cals_t5_base_stable_final_v10/
+app/models/cals_t5/
+checkpoints/
+
+Exclude large datasets
+
+data/
+datasets/
+
+Exclude NLTK downloads (if stored locally)
+
+nltk_data/
+
+Logs and results
+
+*.log
+results.json

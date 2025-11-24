@@ -1,0 +1,12 @@
+streamlit
+transformers
+torch
+scikit-learn
+pymupdf
+python-docx
+rouge-score
+streamlit-authenticator
+plotly
+pandas
+nltk
+pyparsing>=2.3.1
