@@ -1,17 +1,15 @@
+Context-Aware Legal Summarizer (CALS) Prototype
 
-========================================================
-        LEGAL TEXT SUMMARIZER (MASTERS PROJECT)
-========================================================
+Executive Summary
 
-📌 Project Title:
-Legal Summarization and Evaluation using Fine-Tuned BART Model in a Streamlit Web Application
+The Context-Aware Legal Summarizer (CALS) v10 is a research prototype developed to empirically test the feasibility of building dynamically adaptive NLP systems for the high-stakes legal domain.
 
-🎯 Objective:
-This project aims to solve the challenge of lengthy and complex legal texts by developing an intelligent web-based summarization system. The tool allows users to upload legal documents and generate concise summaries using both pretrained and fine-tuned NLP models. It also supports login authentication, data tracking, dashboard analytics, and summary evaluation.
+Primary Goal: To investigate whether explicitly embedding user-defined adversarial context (e.g., Plaintiff vs. Defendant) into the summarization pipeline can produce demonstrably more relevant and higher-utility summaries than generalized models.
 
---------------------------------------------------------
+Core Finding: The final adversarial test revealed that standard Sequence-to-Sequence fine-tuning, even with aggressive data augmentation, failed to achieve semantic divergence between opposing goals. This finding serves as a critical empirical contribution, defining the methodological limitations of current NLP techniques when applied to adversarial legal subjectivity.
+
+
 🔧 Technologies & Libraries Used:
---------------------------------------------------------
 - Python 3.10+
 - Streamlit
 - Hugging Face Transformers
@@ -22,8 +20,7 @@ This project aims to solve the challenge of lengthy and complex legal texts by d
 - Matplotlib / Altair (for dashboard)
 - bcrypt (for password hashing)
 
---------------------------------------------------------
-🧠 Model Details:
+Model Details:
 --------------------------------------------------------
 1. Pretrained Model: facebook/bart-large-cnn
 2. Fine-Tuned Version: Trained on a legal dataset using Hugging Face's Trainer API in Google Colab
